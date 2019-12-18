@@ -1,0 +1,798 @@
+{
+  "paragraphs": [
+    {
+      "text": "REFRESH TABLE twitter_db.tweets_delta",
+      "user": "jyadav@qubole.com",
+      "dateUpdated": "Dec 18, 2019 10:33:31 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": [],
+        "fontSize": 9.0,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "JOB UI",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d19",
+            "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d20"
+          ],
+          "interpreterSettingId": "user_jyadav_qubole"
+        }
+      },
+      "paragraphProgress": {
+        "jobs": [
+          {
+            "id": 19,
+            "jobUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d19",
+            "numTasks": 51,
+            "numCompletedTasks": 51,
+            "stages": [
+              {
+                "id": 39,
+                "completed": true,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d39\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 0
+              },
+              {
+                "id": 40,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d40\u0026attempt\u003d0",
+                "numCompleteTasks": 50,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 50
+              },
+              {
+                "id": 41,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d41\u0026attempt\u003d0",
+                "numCompleteTasks": 1,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 1
+              }
+            ],
+            "status": "Success"
+          },
+          {
+            "id": 20,
+            "jobUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d20",
+            "numTasks": 104,
+            "numCompletedTasks": 104,
+            "stages": [
+              {
+                "id": 45,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d45\u0026attempt\u003d0",
+                "numCompleteTasks": 1,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 1
+              },
+              {
+                "id": 42,
+                "completed": true,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d42\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 0
+              },
+              {
+                "id": 43,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d43\u0026attempt\u003d0",
+                "numCompleteTasks": 53,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 53
+              },
+              {
+                "id": 44,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d44\u0026attempt\u003d0",
+                "numCompleteTasks": 50,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 50
+              }
+            ],
+            "status": "Success"
+          }
+        ],
+        "numCompletedTasks": 155,
+        "numTasks": 155,
+        "truncated": false
+      },
+      "apps": [],
+      "version": "v1",
+      "jobName": "paragraph_1575142504045_-1724964065",
+      "id": "20191130-193504_444121907_q_RZVVUCYEWB1574723002",
+      "dateCreated": "Nov 30, 2019 7:35:04 PM",
+      "dateSubmitted": "Dec 18, 2019 10:33:31 PM",
+      "dateStarted": "Dec 18, 2019 10:33:42 PM",
+      "dateFinished": "Dec 18, 2019 10:33:42 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "title": "Most Trending Hashtags",
+      "text": "select upper(hashtag),count(1) as COUNT from ( select explode(hashtags) as hashtag from twitter_db.tweets_delta)  group by upper(hashtag) order by COUNT desc limit 10\n",
+      "user": "jyadav@qubole.com",
+      "dateUpdated": "Dec 18, 2019 10:35:27 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [
+                {
+                  "name": "upper(hashtag)",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "values": [
+                {
+                  "name": "COUNT",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "scatter": {
+                "xAxis": {
+                  "name": "upper(hashtag)",
+                  "index": 0.0,
+                  "aggr": "sum"
+                },
+                "yAxis": {
+                  "name": "COUNT",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              },
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        ],
+        "fontSize": 9.0,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "{\"exceeded\":-1,\"data\":[[\"upper(hashtag)\",\"COUNT\"],[\"IOT\",\"162\"],[\"AI\",\"90\"],[\"MACHINELEARNING\",\"82\"],[\"BLOCKCHAIN\",\"77\"],[\"BIGDATA\",\"71\"],[\"DATASCIENCE\",\"55\"],[\"ANALYTICS\",\"44\"],[\"SMARTHOME\",\"39\"],[\"HOMEAUTOMATION\",\"35\"],[\"ARTIFICIALINTELLIGENCE\",\"32\"]]}"
+          }
+        ]
+      },
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "JOB UI",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d34",
+            "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d35"
+          ],
+          "interpreterSettingId": "user_jyadav_qubole"
+        }
+      },
+      "paragraphProgress": {
+        "jobs": [
+          {
+            "id": 34,
+            "jobUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d34",
+            "numTasks": 59,
+            "numCompletedTasks": 50,
+            "stages": [
+              {
+                "id": 89,
+                "completed": false,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d89\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 9
+              },
+              {
+                "id": 90,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d90\u0026attempt\u003d0",
+                "numCompleteTasks": 50,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 50
+              }
+            ],
+            "status": "Success"
+          },
+          {
+            "id": 35,
+            "jobUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d35",
+            "numTasks": 219,
+            "numCompletedTasks": 219,
+            "stages": [
+              {
+                "id": 91,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d91\u0026attempt\u003d0",
+                "numCompleteTasks": 19,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 19
+              },
+              {
+                "id": 92,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d92\u0026attempt\u003d0",
+                "numCompleteTasks": 200,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 200
+              }
+            ],
+            "status": "Success"
+          }
+        ],
+        "numCompletedTasks": 269,
+        "numTasks": 278,
+        "truncated": false
+      },
+      "apps": [],
+      "version": "v1",
+      "jobName": "paragraph_1575030754561_874318457",
+      "id": "20191129-123234_1744077096_q_RZVVUCYEWB1574723002",
+      "dateCreated": "Nov 29, 2019 12:32:34 PM",
+      "dateSubmitted": "Dec 18, 2019 10:35:27 PM",
+      "dateStarted": "Dec 18, 2019 10:35:28 PM",
+      "dateFinished": "Dec 18, 2019 10:35:28 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "title": "Top 10 active locations",
+      "text": "\nselect upper(location),count(1) as tweets \nfrom twitter_db.tweets_delta where (length(trim(location)) \u003e 1 and location is not null)\ngroup by upper(location) order by 2 desc limit 10",
+      "user": "jyadav@qubole.com",
+      "dateUpdated": "Dec 18, 2019 10:34:01 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "editorHide": false,
+        "tableHide": false,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300.0,
+              "optionOpen": false,
+              "keys": [
+                {
+                  "name": "upper(location)",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              ],
+              "values": [
+                {
+                  "name": "tweets",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "scatter": {
+                "yAxis": {
+                  "name": "tweets",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              },
+              "setting": {
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        ],
+        "fontSize": 9.0,
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "{\"exceeded\":-1,\"data\":[[\"upper(location)\",\"tweets\"],[\"MYSORE  AND  BERLIN\",\"32\"],[\"MANCHESTER, ENGLAND\",\"12\"],[\"ECUADOR\",\"6\"],[\"HYDERABAD, INDIA\",\"6\"],[\"LONDON, ENGLAND\",\"5\"],[\"SHROPSHIRE\",\"4\"],[\"GEORGIA, ATLANTA\",\"4\"],[\"UNITED STATES\",\"4\"],[\"NEW YORK, NY\",\"4\"],[\"🦅🇪🇬 ♥\",\"2\"]]}"
+          }
+        ]
+      },
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "JOB UI",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d26",
+            "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d27",
+            "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d28"
+          ],
+          "interpreterSettingId": "user_jyadav_qubole"
+        }
+      },
+      "paragraphProgress": {
+        "jobs": [
+          {
+            "id": 26,
+            "jobUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d26",
+            "numTasks": 208,
+            "numCompletedTasks": 103,
+            "stages": [
+              {
+                "id": 66,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d66\u0026attempt\u003d0",
+                "numCompleteTasks": 50,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 50
+              },
+              {
+                "id": 63,
+                "completed": false,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d63\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 53
+              },
+              {
+                "id": 67,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d67\u0026attempt\u003d0",
+                "numCompleteTasks": 1,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 1
+              },
+              {
+                "id": 64,
+                "completed": false,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d64\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 52
+              },
+              {
+                "id": 65,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d65\u0026attempt\u003d0",
+                "numCompleteTasks": 52,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 52
+              },
+              {
+                "id": 62,
+                "completed": true,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d62\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 0
+              }
+            ],
+            "status": "Success"
+          },
+          {
+            "id": 27,
+            "jobUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d27",
+            "numTasks": 207,
+            "numCompletedTasks": 50,
+            "stages": [
+              {
+                "id": 70,
+                "completed": false,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d70\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 52
+              },
+              {
+                "id": 71,
+                "completed": false,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d71\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 52
+              },
+              {
+                "id": 68,
+                "completed": true,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d68\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 0
+              },
+              {
+                "id": 72,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d72\u0026attempt\u003d0",
+                "numCompleteTasks": 50,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 50
+              },
+              {
+                "id": 69,
+                "completed": false,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d69\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 53
+              }
+            ],
+            "status": "Success"
+          },
+          {
+            "id": 28,
+            "jobUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d28",
+            "numTasks": 207,
+            "numCompletedTasks": 207,
+            "stages": [
+              {
+                "id": 74,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d74\u0026attempt\u003d0",
+                "numCompleteTasks": 200,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 200
+              },
+              {
+                "id": 73,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d73\u0026attempt\u003d0",
+                "numCompleteTasks": 7,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 7
+              }
+            ],
+            "status": "Success"
+          }
+        ],
+        "numCompletedTasks": 360,
+        "numTasks": 622,
+        "truncated": false
+      },
+      "apps": [],
+      "version": "v1",
+      "jobName": "paragraph_1574723005480_-514748378",
+      "id": "20191125-230325_1594465024_q_RZVVUCYEWB1574723002",
+      "dateCreated": "Nov 25, 2019 11:03:22 PM",
+      "dateSubmitted": "Dec 18, 2019 10:34:01 PM",
+      "dateStarted": "Dec 18, 2019 10:34:06 PM",
+      "dateFinished": "Dec 18, 2019 10:34:06 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "title": "Users with most number of followers",
+      "text": "select distinct name,screen_name,max(followers_count) as followers from twitter_db.tweets_delta group by name,screen_name order by followers desc limit 10",
+      "user": "jyadav@qubole.com",
+      "dateUpdated": "Dec 18, 2019 10:34:05 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": true,
+              "keys": [
+                {
+                  "name": "screen_name",
+                  "index": 1.0,
+                  "aggr": "sum"
+                }
+              ],
+              "values": [],
+              "groups": [],
+              "scatter": {
+                "yAxis": {
+                  "name": "screen_name",
+                  "index": 1.0,
+                  "aggr": "sum"
+                },
+                "xAxis": {
+                  "name": "name",
+                  "index": 0.0,
+                  "aggr": "sum"
+                }
+              },
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "name": "string",
+                      "screen_name": "string",
+                      "followers": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        ],
+        "fontSize": 9.0,
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "{\"exceeded\":-1,\"data\":[[\"name\",\"screen_name\",\"followers\"],[\"David Clarke\",\"1DavidClarke\",\"94037\"],[\"Harold Sinnott 🇺🇸\",\"HaroldSinnott\",\"60495\"],[\"CryptocoinTALK\",\"cryptocointalk\",\"42075\"],[\"Arjen van Berkum\",\"arjenvanberkum\",\"35606\"],[\"Security Testing\",\"sectest9\",\"28736\"],[\"Viv Milano\",\"VivMilano\",\"24122\"],[\"Dataiku\",\"dataiku\",\"18793\"],[\"SahabatDunia\",\"kherri2014\",\"15687\"],[\"Audrey Renée\",\"BentleyAudrey\",\"14843\"],[\"Marc Mercuri\",\"marcmercuri\",\"13990\"]]}"
+          }
+        ]
+      },
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "JOB UI",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d29",
+            "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d30"
+          ],
+          "interpreterSettingId": "user_jyadav_qubole"
+        }
+      },
+      "paragraphProgress": {
+        "jobs": [
+          {
+            "id": 29,
+            "jobUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d29",
+            "numTasks": 207,
+            "numCompletedTasks": 50,
+            "stages": [
+              {
+                "id": 78,
+                "completed": false,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d78\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 52
+              },
+              {
+                "id": 75,
+                "completed": true,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d75\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 0
+              },
+              {
+                "id": 79,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d79\u0026attempt\u003d0",
+                "numCompleteTasks": 50,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 50
+              },
+              {
+                "id": 76,
+                "completed": false,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d76\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 53
+              },
+              {
+                "id": 77,
+                "completed": false,
+                "status": "Skipped",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d77\u0026attempt\u003d0",
+                "numCompleteTasks": 0,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 52
+              }
+            ],
+            "status": "Success"
+          },
+          {
+            "id": 30,
+            "jobUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/jobs/job?spark\u003dtrue\u0026id\u003d30",
+            "numTasks": 207,
+            "numCompletedTasks": 207,
+            "stages": [
+              {
+                "id": 81,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d81\u0026attempt\u003d0",
+                "numCompleteTasks": 200,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 200
+              },
+              {
+                "id": 80,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://eu-central-1.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.239.1%3A8088%2Fproxy%2Fapplication_1576685534947_0019/stages/stage/?id\u003d80\u0026attempt\u003d0",
+                "numCompleteTasks": 7,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 7
+              }
+            ],
+            "status": "Success"
+          }
+        ],
+        "numCompletedTasks": 257,
+        "numTasks": 414,
+        "truncated": false
+      },
+      "apps": [],
+      "version": "v1",
+      "jobName": "paragraph_1574723835772_-932793644",
+      "id": "20191125-231715_713285557_q_RZVVUCYEWB1574723002",
+      "dateCreated": "Nov 25, 2019 11:17:15 PM",
+      "dateSubmitted": "Dec 18, 2019 10:34:05 PM",
+      "dateStarted": "Dec 18, 2019 10:34:09 PM",
+      "dateFinished": "Dec 18, 2019 10:34:09 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "text": "",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "version": "v0",
+      "jobName": "paragraph_1574973020982_-361897260",
+      "id": "20191128-203020_823944416_q_RZVVUCYEWB1574723002",
+      "dateCreated": "Nov 28, 2019 8:30:20 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 1000
+    }
+  ],
+  "name": "Tweets Delta Table SQL Analysis - JT",
+  "id": "RZVVUCYEWB1574723002",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "md:shared_process": [],
+    "user_jyadav_qubole:shared_process": []
+  },
+  "config": {
+    "isDashboard": false,
+    "defaultLang": "sql",
+    "looknfeel": "default",
+    "cronExecutingUser": "2373",
+    "cron_updated_by_useremail": "jyadav@qubole.com",
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {
+    "runAllInProgress": false
+  },
+  "source": "FCN"
+}
