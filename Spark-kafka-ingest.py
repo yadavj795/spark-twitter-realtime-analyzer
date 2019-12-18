@@ -1,4 +1,8 @@
 import tweepy,time
+from pyspark import SparkConf, SparkContext, SQLContext
+from pyspark.sql import SQLContext
+from pyspark.sql import SparkSession
+
 from tweepy.streaming import StreamListener
 from tweepy import OAuthHandler
 from tweepy import Stream
@@ -6,8 +10,17 @@ from kafka import SimpleProducer, KafkaClient
 from datetime import datetime, timedelta,date
 from kafka import KafkaConsumer, KafkaProducer
 import sys
+import json
 #reload(sys)
 #sys.setdefaultencoding('utf8')
+
+
+conf = SparkConf().setAppName("spark-kafka-ingest")
+conf = conf.setMaster("local[*]")
+sc = SparkContext(conf=conf)
+sqlContext = SQLContext(sc)
+
+
 
 today = str(date.today())
 
@@ -15,11 +28,11 @@ def normalize_timestamp(time):
     mytime = datetime.strptime(time, "%Y-%m-%d %H:%M:%S")
     mytime += timedelta(hours=1)   # the tweets are timestamped in GMT timezone, while I am in +1 timezone
     return (mytime.strftime("%Y-%m-%d %H:%M:%S"))
-    
-consumer_key = "xxxx"
-consumer_secret = "xxxx"
-access_token = "xxxx"
-access_token_secret = "xxxx"
+
+consumer_key = sys.argv[1]
+consumer_secret = sys.argv[2]
+access_token = sys.argv[3]
+access_token_secret = sys.argv[4]
 
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -30,7 +43,6 @@ query = "#hadoop OR #Spark OR #IOT OR #BigData OR #Blockchain"
 max_tweets = 100
 producer = KafkaProducer(bootstrap_servers='localhost:9092')
 topic_name = 'tweets'
-
 
 def get_twitter_data():
     res = api.search(query)
@@ -90,7 +102,7 @@ def get_twitter_data_json():
     for json_obj in searched_tweets:
         rddjson = sc.parallelize([json.dumps(json_obj).encode('utf-8')])
         df = sqlContext.read.option("multiLine", "true").option("mode", "DROPMALFORMED").json(rddjson)
-      
+
         producer.send(topic_name, json.dumps(json_obj).encode('utf-8'))
 
 def periodic_work(interval):
@@ -98,7 +110,5 @@ def periodic_work(interval):
         get_twitter_data_json()
         #interval should be an integer, the number of seconds to wait
         time.sleep(interval)
-        
-periodic_work(60 * 0.2) 
 
-
+periodic_work(60 * 0.2)
