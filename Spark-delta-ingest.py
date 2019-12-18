@@ -26,7 +26,7 @@ delta_loc = sys.argv[3]
 Schema_json = spark.read.option("multiLine", "true").json("/tmp/spark-twitter-realtime-analyzer/tweet.json").schema
 
 spark.sql("CREATE DATABASE IF NOT EXISTS twitter_db")
-spark.sql("DROP TABLE twitter_db.tweets_delta")
+spark.sql("DROP TABLE IF EXISTS twitter_db.tweets_delta")
 spark.sql("CREATE TABLE twitter_db.tweets_delta USING DELTA LOCATION '{0}'".format(delta_loc))
 
 kafkaStreamDF = spark.readStream.format("kafka").option("kafka.bootstrap.servers", brokers).option("subscribe", "tweets").option("startingOffsets", 'latest').load().selectExpr("CAST(value AS STRING)")
