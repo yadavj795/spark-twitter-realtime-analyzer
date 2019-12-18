@@ -15,6 +15,7 @@ from delta.tables import *
 spark = SparkSession \
      .builder \
      .appName("Python Spark SQL basic example") \
+     .enableHiveSupport() \
      .getOrCreate()
 
 
