@@ -10,19 +10,6 @@ source $HUSTLER_BASH_LIB_DIR/qubole-bash-lib.sh
 # Check if we are running on master
 is_master=$(nodeinfo is_master)
 
-download_conf_files() {
-
-	cd $SPARK_CONF_DIR
-	s3cmd -c $S3CFG_PATH get s3://yogeshg/vagrawal/application.conf
-
-	cd $HOME
-	s3cmd -c $S3CFG_PATH get s3://dev.canopydata.com/abhishekd/twitterstream.jar
-	s3cmd -c $S3CFG_PATH get s3://dev.canopydata.com/abhishekd/pos-words.dat
-	s3cmd -c $S3CFG_PATH get s3://dev.canopydata.com/abhishekd/neg-words.dat
-	s3cmd -c $S3CFG_PATH get s3://dev.canopydata.com/abhishekd/stop-words.dat
-
-}
-
 download_kafka() {
 	sudo -u ec2-user -s <<EOF
 	cd /home/ec2-user
@@ -135,7 +122,6 @@ run_twitter_demo() {
 
 if [[ "$is_master" == "1" ]]; then
 
-	download_conf_files
 	install_deps
 	download_kafka
 	configure_start_kafka
