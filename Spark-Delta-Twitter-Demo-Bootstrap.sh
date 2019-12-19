@@ -41,6 +41,7 @@ install_python_packages()
   	pip install kafka-python
 	pip install python-twitter
 	pip install tweepy
+	yum install git -y
   	echo "*** Package install finished ***"
 }
 
