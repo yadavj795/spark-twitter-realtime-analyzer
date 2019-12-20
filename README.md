@@ -8,8 +8,11 @@ Pre-Requisites:
 1. We have add twitter API keys in the bootstrap file and add that bootstrap file in your cluster configuration.
 
 	consumer_key=""
+	
 	consumer_secret=""
+	
 	access_token=""
+	
 	access_token_secret=""
   
 2. Qubole cluster must have below packages installed as part of cluster package management(PM)
