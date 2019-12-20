@@ -14,14 +14,16 @@ Pre-Requisites:
   
 2. Qubole cluster must have below packages installed as part of cluster package management(PM)
 
-  pip install kafka-python
+  	pip install kafka-python
+	
 	pip install python-twitter
+	
 	pip install tweepy
 
 3. We will do spark SQL analytics via Zeppeline notebook, therefore, we have to add below delta lake dependency in zeppline
    interpreter settings.
    
-   io.delta:delta-core_2.11:0.4.0
+   	io.delta:delta-core_2.11:0.4.0
    
 
 How to run?:
