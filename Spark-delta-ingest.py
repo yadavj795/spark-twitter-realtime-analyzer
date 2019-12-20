@@ -13,7 +13,7 @@ from pyspark.sql.functions import udf, expr, concat, col
 from delta.tables import *
 
 if len (sys.argv) != 4 :
-    print "Usage: spark-submit Spark-delta-ingest.py broker checkpoint_dir delta_tbl_loc"
+    print ("Usage: spark-submit Spark-delta-ingest.py broker checkpoint_dir delta_tbl_loc")
     sys.exit (1)
 
 spark = SparkSession \
