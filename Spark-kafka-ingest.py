@@ -14,6 +14,9 @@ import json
 #reload(sys)
 #sys.setdefaultencoding('utf8')
 
+if len (sys.argv) != 5 :
+    print "Usage: spark-submit Spark-kafka-ingest.py consumer_key consumer_secret access_token access_token_secret"
+    sys.exit (1)
 
 conf = SparkConf().setAppName("spark-kafka-ingest")
 conf = conf.setMaster("local[*]")
