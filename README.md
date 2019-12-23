@@ -1,9 +1,13 @@
-# spark-twitter-realtime-analyzer
+## Project Title
+
+#spark-twitter-realtime-analyzer
+
+## Getting Started
 
 This is a small project to demonstrate Qubole integration with Delta Lake. Here, we are using real time twitter feeds and doing some
 SQL based analytics on top of that.
 
-Pre-Requisites:
+### Prerequisites
 
 1. We need to add twitter API keys in the bootstrap file and then add that updated bootstrap file in cluster configuration.
 
@@ -29,7 +33,7 @@ Pre-Requisites:
    	io.delta:delta-core_2.11:0.4.0
    
 
-How to run?
+### How to run?
 
 Once we have above pre-reqs completed, all he have to do is start the cluster, rest will be taken care by bootstrap script.
 We can then import the notebook json file in Zeppeline and start using those SQL queries.
