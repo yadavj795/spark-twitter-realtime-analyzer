@@ -7,6 +7,12 @@ S3CFG_PATH="/usr/lib/hustler/s3cfg"
 
 source $HUSTLER_BASH_LIB_DIR/qubole-bash-lib.sh
 
+	
+export consumer_key="xxxxx"
+export consumer_secret="xxxxx"
+export access_token="xxxxx"
+export access_token_secret="xxxxx"
+
 # Check if we are running on master
 is_master=$(nodeinfo is_master)
 
@@ -80,12 +86,6 @@ EOF
 
 
 run_twitter_demo() {
-
-	
-	export consumer_key="xxxxx"
-	export consumer_secret="xxxxx"
-	export access_token="xxxxx"
-	export access_token_secret="xxxxx"
 
 	cd /tmp/
 	rm -rf spark-twitter-realtime-analyzer
