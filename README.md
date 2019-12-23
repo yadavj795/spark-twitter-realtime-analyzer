@@ -5,7 +5,7 @@ SQL based analytics on top of that.
 
 Pre-Requisites:
 
-1. We have add twitter API keys in the bootstrap file and add that bootstrap file in your cluster configuration.
+1. We need to add twitter API keys in the bootstrap file and then add that updated bootstrap file in cluster configuration.
 
 	consumer_key=""
 	
@@ -23,13 +23,13 @@ Pre-Requisites:
 	
 	pip install tweepy
 
-3. We will do spark SQL analytics via Zeppeline notebook, therefore, we have to add below delta lake dependency in zeppline
+3. Will do spark SQL analytics via Zeppeline notebook, therefore, we have to add below delta lake dependency in zeppline
    interpreter settings.
    
    	io.delta:delta-core_2.11:0.4.0
    
 
-How to run?:
+How to run?
 
 Once we have above pre-reqs completed, all he have to do is start the cluster, rest will be taken care by bootstrap script.
-You can then import the notebook json file and start using those SQL queries.
+We can then import the notebook json file in Zeppeline and start using those SQL queries.
