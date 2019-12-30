@@ -100,17 +100,21 @@ run_twitter_demo() {
 	#set checkpoint dir and delta table location.
 
 	export DEFLOC_LOCATION=`nodeinfo s3_default_location`
-
-	hadoop fs -mkdir $DEFLOC_LOCATION/delta_tbl
-	hadoop fs -mkdir $DEFLOC_LOCATION/delta_chk_point
+	
+	#get cluster id
+	
+	export CLUSTER_ID=`nodeinfo cluster_id`
 
 	#cleaning the directories.
 
-	hadoop fs -rmr $DEFLOC_LOCATION/delta_tbl/*
-	hadoop fs -rmr $DEFLOC_LOCATION/delta_chk_point/*
+	hadoop fs -rmr $DEFLOC_LOCATION/$CLUSTER_ID/delta_tbl/*
+	hadoop fs -rmr $DEFLOC_LOCATION/$CLUSTER_ID/delta_chk_point/*
+	
+	hadoop fs -mkdir -p $DEFLOC_LOCATION/$CLUSTER_ID/delta_tbl
+	hadoop fs -mkdir -p $DEFLOC_LOCATION/$CLUSTER_ID/delta_chk_point
   
-	export table_loc="$DEFLOC_LOCATION"/delta_tbl
-	export chk_point_dir="$DEFLOC_LOCATION"/delta_chk_point
+	export table_loc="$DEFLOC_LOCATION"/"$CLUSTER_ID"/delta_tbl
+	export chk_point_dir="$DEFLOC_LOCATION"/"$CLUSTER_ID"/delta_chk_point
 
 	nohup /usr/lib/spark/bin/spark-submit --packages io.delta:delta-core_2.11:0.4.0  /tmp/spark-twitter-realtime-analyzer/Spark-delta-ingest.py $kafka_broker $chk_point_dir $table_loc > Spark-delta-ingest.log 2>&1 </dev/null &
 
