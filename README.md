@@ -9,7 +9,7 @@ SQL based analytics on top of that.
 
 ### Prerequisites
 
-1. We need to add twitter API keys in the bootstrap file and then add that updated bootstrap file in cluster configuration.
+1. We need to add twitter API keys in the bootstrap file and then add updated bootstrap file in the cluster node bootstrap section.
 
 	consumer_key=""
 	
@@ -35,5 +35,4 @@ SQL based analytics on top of that.
 
 ### How to run?
 
-Once we have above pre-reqs completed, all he have to do is start the cluster, rest will be taken care by bootstrap script.
-We can then import the notebook json file in Zeppeline and start using those SQL queries.
+Once we have above pre-reqs completed, all we have to do is to start the cluster, rest will be taken care by the bootstrap script. We can then import the notebook json file in Zeppeline and start using SQL queries.
