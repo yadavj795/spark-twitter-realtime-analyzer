@@ -4,8 +4,11 @@
 
 ## Getting Started
 
-This is a small project to demonstrate Qubole integration with Delta Lake. Here, we are using real time twitter feeds and doing some
-SQL based analytics on top of that.
+This is a small project to demonstrate Qubole integration with Delta Lake  with full Acid, transaction support and time travel etc. on Delta lake. Here, we are using real time twitter feeds and doing some SQL based analytics on top of that.
+
+## Demo Architecture
+
+Twitter Python App ==> Kafka ==> Spark Structure Streaming ==> Delta Lake ===> Spark Sql Analytics
 
 ### Prerequisites
 
