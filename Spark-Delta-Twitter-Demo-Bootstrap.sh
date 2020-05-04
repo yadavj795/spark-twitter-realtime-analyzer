@@ -19,10 +19,10 @@ is_master=$(nodeinfo is_master)
 download_kafka() {
 	sudo -u ec2-user -s <<EOF
 	cd /home/ec2-user
-	rm -rf kafka_2.11-2.1.1.tgz kafka_2.11-2.1.1 kafka
-	wget http://www.us.apache.org/dist/kafka/2.1.1/kafka_2.11-2.1.1.tgz -O $HOME/kafka_2.11-2.1.1.tgz
+	rm -rf kafka_2.11-2.4.1.tgz kafka
+	wget http://www.us.apache.org/dist/kafka/2.4.1/kafka_2.11-2.4.1.tgz -O $HOME/kafka_2.11-2.4.1.tgz
 	mkdir -p kafka
-	tar zxf kafka_2.11-2.1.1.tgz -C kafka --strip-components 1
+	tar zxf kafka_2.11-2.4.1.tgz -C kafka --strip-components 1
 EOF
 
 }
